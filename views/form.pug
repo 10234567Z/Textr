@@ -1,1 +1,15 @@
 extends layout
+block content 
+    head 
+        h1 Create New Message 
+    block content
+        form(action="/new" , method="POST") 
+            label(for="user")= "Username :"
+            br
+            input(type="text" id="user")
+            br 
+            label(for="text")= "Message :"
+            br
+            input(type="text" id="text")
+            br
+            button(type="submit")= "Submit"
