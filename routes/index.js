@@ -30,7 +30,7 @@ router.post('/new', function (req, res) {
     user: req.body.user,
     date: new Date()
   })
-  res.send("Successfully sent the message")
+  res.render('success')
 })
 
 module.exports = router;
