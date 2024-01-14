@@ -15,13 +15,17 @@ const messages = [
 ]
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Textr' , messages: messages});
+router.get('/', function (req, res, next) {
+  res.render('index', { title: 'Textr', messages: messages });
 });
 
 /* GET users listing. */
-router.get('/new', function(req, res, next) {
-  res.render('form' , {title: 'New | Textr'});
+router.get('/new', function (req, res, next) {
+  res.render('form', { title: 'New | Textr' });
 });
+
+router.post('/new', function (req, res) {
+  
+})
 
 module.exports = router;

@@ -6,10 +6,10 @@ block content
         form(action="/new" , method="POST") 
             label(for="user")= "Username :"
             br
-            input(type="text" id="user")
+            input(type="text" id="user" name="user")
             br 
             label(for="text")= "Message :"
             br
-            input(type="text" id="text")
+            input(type="text" id="text" name="text")
             br
             button(type="submit")= "Submit"
