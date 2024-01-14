@@ -3,12 +3,12 @@ var router = express.Router();
 
 const messages = [
   {
-    message: "Hello There , I am first",
+    text: "Hello There , I am first",
     user: "Danny",
     date: new Date(),
   },
   {
-    message: "That makes me second",
+    text: "That makes me second",
     user: "Amanda",
     date: new Date(),
   },
@@ -16,7 +16,7 @@ const messages = [
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Textr' });
+  res.render('index', { title: 'Textr' , messages: messages});
 });
 
 module.exports = router;
